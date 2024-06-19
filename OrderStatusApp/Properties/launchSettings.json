@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "OrderStatusApp": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Test",
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
