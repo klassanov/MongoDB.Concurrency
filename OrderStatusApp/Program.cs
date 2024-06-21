@@ -14,7 +14,7 @@ namespace OrderStatusApp
                               .ConfigureServices((context, services) =>
                                 {
                                     var mongoConnectionString = context.Configuration["MongoDBSettings:AtlasURI"];
-                                    services.AddScoped<IOrderStatusService, BasicOrderStatusService>();
+                                    services.AddTransient<IOrderStatusService, BasicOrderStatusService>();
                                     services.AddSingleton<IMongoClient, MongoClient>(serviceProvider =>
                                     {
                                         return new MongoClient(mongoConnectionString);
